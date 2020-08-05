@@ -16,7 +16,6 @@ h5,
 h6{
   font-family: 'Molengo', sans-serif;
   font-weight: normal;
-  /* font-style: italic; */
 }
 
 h1 {
@@ -25,9 +24,6 @@ h1 {
   letter-spacing: -.2px;
   color: white;
   margin: 0;
-  /* margin: 100px 150px 70px 30px; */
-  /* text-transform: uppercase; */
-  /* text-decoration: dashed; */
 }
 h1 strong {
   color: #b28ece;
@@ -43,49 +39,26 @@ h2 {
 
 .hero {
   height: 300px;
-  /* background-image: url('../images/hero.jpg'); */
   background-color: #5f506b;
-  /* background-size: 500px 300px; */
-  /* background-repeat: no-repeat; */
-  /* background-position-x: right; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .hero-image{
   object-fit: cover;
 }
 
-
 .portfolio {
   background: #fafafa;
   padding: 20px;
-  /* background: red; */
 }
 
 .project {
-  /* border-top: 10px solid red;
-  border-right: 10px solid green;
-  border-left: 10px solid orange;
-  border-bottom: 10px solid pink; */
-  /* color: blue; */
-  /* border-top-color: red;
-  border-top-width: 15px;
-  border-top-style: solid; */
   border: 1px solid gray;
   border-radius: 10px;
-  /* border-top-left-radius: 50px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
-  /* margin: 10px; */
   margin-bottom: 15px;
-  /* margin-right
-  margin-left 
-  margin-top */
   padding: 20px;
   background: white;
   display: flex;
@@ -104,9 +77,6 @@ h2 {
 .project strong {
   font-family: 'Molengo', sans-serif;
 }
-/* .project-date {
-  margin: 10px 0;
-} */
 
 .project-title {
   font-size: 30px;
@@ -130,7 +100,7 @@ h2 {
   height: 70px;
   align-items: center;
   justify-content: flex-start;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 ol,

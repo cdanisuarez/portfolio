@@ -8,12 +8,12 @@ body {
   margin: 0;
 }
 
-h1, 
+h1,
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   font-family: 'Molengo', sans-serif;
   font-weight: normal;
 }
@@ -25,9 +25,11 @@ h1 {
   color: white;
   margin: 0;
 }
+
 h1 strong {
   color: #b28ece;
 }
+
 h2 {
   color: #b28ece;
   text-transform: uppercase;
@@ -35,6 +37,17 @@ h2 {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 40px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
 }
 
 .hero {
@@ -46,7 +59,7 @@ h2 {
   flex-wrap: wrap;
 }
 
-.hero-image{
+.hero-image {
   object-fit: cover;
 }
 
@@ -66,14 +79,17 @@ h2 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .project-course,
 .project-date,
 .project-url {
   margin: 10px 0;
 }
+
 .project-description {
   font-size: 20px;
 }
+
 .project strong {
   font-family: 'Molengo', sans-serif;
 }
@@ -86,11 +102,15 @@ h2 {
 
 
 .project-details {
-  width: 500px;
+  width: 50%;
 }
 
 .project-imageContainer {
-  width: 500px;
+  width: 50%;
+}
+
+.project-imageContainer img {
+  max-width: 100%;
 }
 
 .header {
@@ -99,35 +119,28 @@ h2 {
   display: flex;
   height: 70px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
-}
-
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-figure {
-  margin: 0;
 }
 
 .header a {
   color: white;
   text-decoration: none;
 }
+
 .menu {
   height: inherit;
 }
+
 .header ol {
   display: flex;
   height: inherit;
 }
+
 .header ol li {
   height: inherit;
 }
+
 .header a {
   display: flex;
   align-items: center;
@@ -140,7 +153,7 @@ figure {
 } */
 
 .header .logo img {
-  width: 150px;
+  width: 85px;
 }
 
 .flexbox {
@@ -180,10 +193,12 @@ figure {
   display: flex;
   flex-wrap: wrap;
 }
+
 .event-list-title {
   margin-left: 20px;
 }
-.event { 
+
+.event {
   margin: 10px;
   width: 480px;
   flex-shrink: 0;
@@ -191,11 +206,13 @@ figure {
   overflow: hidden;
   background: #f4fbff;
 }
+
 .event img {
   width: 480px;
   height: 200px;
   object-fit: cover;
 }
+
 .event-detail {
   margin: 20px 40px;
   margin-top: -40px;
@@ -204,6 +221,7 @@ figure {
   padding: 20px;
   text-align: center;
 }
+
 .event-description {
   text-align: left;
 }
@@ -240,12 +258,15 @@ figure {
 .social-link.twitter {
   background-image: url('../images/twitter.svg');
 }
+
 .social-link.facebook {
   background-image: url('../images/facebook.svg');
 }
+
 .social-link.github {
   background-image: url('../images/github.svg');
 }
+
 .social-link.instagram {
   background-image: url('../images/instagram.svg');
 }
@@ -273,13 +294,13 @@ figure {
   margin-top: 10px;
 }
 
-.form-email h3 { 
+.form-email h3 {
   font-family: 'Molengo', sans-serif;
 }
 
 .container {
-  /* border: 1px solid red; */
   max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -289,6 +310,71 @@ figure {
 }
 
 @media screen and (max-width: 1024px) {}
-@media screen and (max-width: 768px) {}
-@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    height: auto;
+  }
+
+  .header ol {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header ol li {
+    height: 40px;
+  }
+
+  .header .logo {
+    text-align: center;
+  }
+
+  .project {
+    display: block;
+  }
+
+  .project-imageContainer {
+    width: auto;
+    text-align: center;
+  }
+
+  .project-details {
+    width: auto;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: .3em;
+  }
+
+  .project-url {
+    font-size: 1em;
+  }
+
+  .project-course {
+    font-size: .7em;
+  }
+
+  .project-date {
+    font-size: 1em;
+  }
+
+  .project-description {
+    font-size: .8em;
+  }
+
+  .project-course,
+  .project-date,
+  .project-url {
+    margin: .4em 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-details {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 320px) {}

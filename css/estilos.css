@@ -196,11 +196,12 @@ figure {
 
 .event-list-title {
   margin-left: 20px;
+  font-size: 1.3em;
 }
 
 .event {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -369,11 +370,25 @@ figure {
   .project-url {
     margin: .4em 0;
   }
+
+  .event {
+    width: auto;
+    flex-shrink: initial;
+  }
+
+  .event img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .project-details {
     font-size: 12px;
+  }
+
+  .event-detail {
+    margin: -2em .5em .5em;
+    padding: 1em;
   }
 }
 

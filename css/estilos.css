@@ -5,8 +5,8 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?k1irdr');
-  src:  url('../fonts/icomoon.eot?k1irdr#iefix') format('embedded-opentype'),
+  src: url('../fonts/icomoon.eot?k1irdr');
+  src: url('../fonts/icomoon.eot?k1irdr#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.ttf?k1irdr') format('truetype'),
     url('../fonts/icomoon.woff?k1irdr') format('woff'),
     url('../fonts/icomoon.svg?k1irdr#icomoon') format('svg');
@@ -15,7 +15,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -33,15 +34,19 @@
 .icon-github:before {
   content: "\e901";
 }
+
 .icon-twitter:before {
   content: "\e902";
 }
+
 .icon-instagram:before {
   content: "\e903";
 }
+
 .icon-facebook:before {
   content: "\e904";
 }
+
 .icon-menu:before {
   content: "\e900";
 }
@@ -357,6 +362,22 @@ figure {
   position: relative;
 }
 
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #7a6c86;
+  opacity: 0.8;
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 1024px) {
   .hero {
     height: auto;
@@ -383,6 +404,10 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
+  .burger-btn {
+    display: block;
+  }
+
   .header {
     display: block;
     height: auto;
@@ -395,10 +420,37 @@ figure {
 
   .header ol li {
     height: 40px;
+    margin-top: 10px;
+  }
+
+  .header a {
+    justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-top: 5px;
   }
 
   .header .logo {
     text-align: center;
+  }
+
+  .menu {
+    position: fixed;
+    background: rgba(95, 80, 107, .8);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+
+  .menu.active {
+    left: 0;
   }
 
   .project {

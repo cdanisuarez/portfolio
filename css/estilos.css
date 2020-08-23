@@ -475,19 +475,19 @@ figure {
   }
 
   .project-url {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .project-course {
-    font-size: .7em;
+    font-size: 1.1em;
   }
 
   .project-date {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .project-description {
-    font-size: .8em;
+    font-size: 1.2em;
   }
 
   .project-course,

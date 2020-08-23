@@ -13,6 +13,8 @@ function validation(event) {
   }
 }
 
+validation(ipad);
+
 function hideOrShow() {
   const ACTIVE = 'active';
   if (menu.classList.contains(ACTIVE)) {

@@ -4,7 +4,7 @@ Here, we have a professional portfolio in a web page, this one works with respon
 
 Technologies applied: HTML5, CSS3 and Javascript.
 
-Mira el demo [*aquí*](https://cdanisuarez.github.io/portfolio/index.html)
+Mira el demo [**aquí**](https://cdanisuarez.github.io/portfolio/index.html)
 
 ## Mobile experience
 
